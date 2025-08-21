@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Dice6, Crown, Utensils, Quote, ArrowRight } from 'lucide-react';
+import { Dice6, Crown, Utensils, Quote, ArrowRight, Hotel } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
@@ -25,6 +25,39 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative py-24 bg-gradient-to-br from-purple-900 via-indigo-900 to-slate-900 overflow-hidden">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-indigo-600/10"></div>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex justify-center mb-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-full p-6">
+              <Hotel className="w-12 h-12 text-amber-400" />
+            </div>
+          </div>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            Luxury Casino Resort Experiences
+          </h1>
+          <p className="text-xl text-purple-100 max-w-3xl mx-auto leading-relaxed mb-8">
+            Discover the world's most exclusive casino hotels where luxury meets excitement, and every stay becomes an unforgettable experience.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link 
+              to="/hotels" 
+              className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-8 py-4 rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold"
+            >
+              Explore Hotels
+            </Link>
+            <Link 
+              to="/contact" 
+              className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-purple-900 transition-all duration-300 font-semibold"
+            >
+              Contact Concierge
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section - What Are Casino Hotels */}
       <section className="py-16 bg-gradient-to-b from-white to-slate-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

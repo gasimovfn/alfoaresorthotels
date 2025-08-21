@@ -3,34 +3,46 @@ import { Crown, Users, Award, Globe } from 'lucide-react';
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
-            About RoyalDelft-GR
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative py-24 bg-gradient-to-br from-slate-900 via-purple-900 to-indigo-900 overflow-hidden">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-600/10 to-purple-600/10"></div>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex justify-center mb-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-full p-6">
+              <Crown className="w-12 h-12 text-amber-400" />
+            </div>
+          </div>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            About AlfoareResortHotels
           </h1>
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-            Curating exceptional casino hotel experiences across Greece with a commitment to luxury, heritage, and world-class hospitality.
+          <p className="text-xl text-purple-100 max-w-3xl mx-auto leading-relaxed">
+            Curating exceptional casino hotel experiences worldwide with a commitment to luxury, heritage, and world-class hospitality.
           </p>
         </div>
+      </section>
+
+      <div className="py-16 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h2 className="text-3xl font-bold text-slate-800 mb-6">Our Story</h2>
+            <h2 className="text-3xl font-bold text-slate-800 mb-6 mt-16">Our Story</h2>
             <p className="text-slate-600 mb-4 leading-relaxed">
-              Founded with a passion for Greek heritage and luxury hospitality, RoyalDelft-GR has been connecting discerning travelers with the finest casino resort experiences across Greece for over a decade.
+              Founded with a passion for luxury hospitality and gaming excellence, AlfoareResortHotels has been connecting discerning travelers with the finest casino resort experiences worldwide for over a decade.
             </p>
             <p className="text-slate-600 mb-4 leading-relaxed">
-              From the ancient splendor of Athens to the breathtaking beauty of the Greek islands, we specialize in properties that offer more than just gaming – they provide a gateway to Greek culture, cuisine, and unparalleled luxury.
+              From the ancient splendor of historic cities to breathtaking coastal destinations, we specialize in properties that offer more than just gaming – they provide a gateway to local culture, cuisine, and unparalleled luxury.
             </p>
             <p className="text-slate-600 leading-relaxed">
-              Our carefully curated selection ensures that every property meets our exacting standards for service, amenities, and authentic Greek hospitality.
+              Our carefully curated selection ensures that every property meets our exacting standards for service, amenities, and authentic hospitality.
             </p>
           </div>
           <div className="relative">
             <img 
               src="https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=800" 
-              alt="Greek architecture and sunset"
+              alt="Luxury resort architecture and sunset"
               className="w-full h-80 object-cover rounded-2xl shadow-lg"
             />
           </div>
@@ -65,8 +77,8 @@ const AboutPage = () => {
             <div className="bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-full p-6 w-20 h-20 mx-auto mb-4">
               <Globe className="w-8 h-8 text-white mx-auto" />
             </div>
-            <h3 className="text-xl font-bold text-slate-800 mb-2">Greek Heritage</h3>
-            <p className="text-slate-600 text-sm">Deep connection to authentic Greek culture and hospitality</p>
+            <h3 className="text-xl font-bold text-slate-800 mb-2">Global Reach</h3>
+            <p className="text-slate-600 text-sm">Deep connection to authentic local culture and hospitality worldwide</p>
           </div>
         </div>
 
@@ -80,6 +92,7 @@ const AboutPage = () => {
             </p>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

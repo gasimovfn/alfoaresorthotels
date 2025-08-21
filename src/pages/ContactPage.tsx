@@ -23,16 +23,28 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen py-16 bg-slate-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative py-24 bg-gradient-to-br from-emerald-900 via-teal-900 to-cyan-900 overflow-hidden">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/10 to-cyan-600/10"></div>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex justify-center mb-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-full p-6">
+              <Phone className="w-12 h-12 text-amber-400" />
+            </div>
+          </div>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Contact Us
           </h1>
-          <p className="text-lg text-slate-600">
-            Get in touch with our concierge team for personalized assistance
+          <p className="text-xl text-emerald-100 max-w-3xl mx-auto leading-relaxed">
+            Get in touch with our concierge team for personalized assistance and exclusive booking services.
           </p>
         </div>
+      </section>
+
+      <div className="py-16 bg-slate-50">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Contact Information */}
@@ -44,7 +56,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-slate-800">Phone</h3>
-                  <p className="text-slate-600">+30 210 123 4567</p>
+                  <p className="text-slate-600">+1 (555) 123-4567</p>
                 </div>
               </div>
             </div>
@@ -56,7 +68,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-slate-800">Email</h3>
-                  <p className="text-slate-600">concierge@royaldelft-gr.com</p>
+                  <p className="text-slate-600">concierge@alfoaresorthotels.com</p>
                 </div>
               </div>
             </div>
@@ -68,7 +80,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-slate-800">Location</h3>
-                  <p className="text-slate-600">International Locations</p>
+                  <p className="text-slate-600">123 Luxury Boulevard, Monaco 98000</p>
                 </div>
               </div>
             </div>
@@ -191,6 +203,7 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

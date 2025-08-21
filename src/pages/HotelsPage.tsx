@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Star, MapPin, Wifi, Car, Utensils } from 'lucide-react';
+import { ArrowRight, Star, MapPin, Wifi, Car, Utensils, Hotel } from 'lucide-react';
 
 const HotelsPage = () => {
   const hotels = [
@@ -61,15 +61,26 @@ const HotelsPage = () => {
 
   return (
     <div className="min-h-screen py-16 bg-slate-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
+      {/* Hero Section */}
+      <section className="relative py-24 bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900 overflow-hidden mb-16">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/10 to-purple-600/10"></div>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex justify-center mb-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-full p-6">
+              <Hotel className="w-12 h-12 text-amber-400" />
+            </div>
+          </div>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Our Casino Hotels
           </h1>
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-            Discover an exclusive collection of luxury casino resorts across Greece, where ancient heritage meets modern gaming excellence.
+          <p className="text-xl text-indigo-100 max-w-3xl mx-auto leading-relaxed">
+            Discover an exclusive collection of luxury casino resorts worldwide, where ancient heritage meets modern gaming excellence.
           </p>
         </div>
+      </section>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {hotels.map((hotel, index) => (
