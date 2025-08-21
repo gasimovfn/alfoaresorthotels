@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Star, MapPin, Wifi, Car, Utensils, Hotel } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HotelsPage = () => {
   const hotels = [
@@ -126,10 +127,10 @@ const HotelsPage = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <a href='/contact' className="flex-1 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 rounded-lg hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 flex items-center justify-center space-x-2">
+                  <Link to='/contact' className="flex-1 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 rounded-lg hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 flex items-center justify-center space-x-2">
                     <span>Book Now</span>
                     <ArrowRight className="w-4 h-4" />
-                  </a>
+                  </Link>
                   <button className="flex-1 border-2 border-slate-200 text-slate-700 px-6 py-3 rounded-lg hover:border-purple-300 hover:text-purple-600 transition-all duration-300">
                     View Details
                   </button>
